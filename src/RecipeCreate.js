@@ -49,6 +49,7 @@ function RecipeCreate({handleNewRecipes}) {
                 name="name"
                 type="text"
                 placeholder="Name"
+                required={true}
                 onChange={handleChange}
                 value={formData.name}
               />
@@ -59,6 +60,7 @@ function RecipeCreate({handleNewRecipes}) {
                 name="cuisine"
                 type="text"
                 placeholder="Cuisine"
+                required={true}
                 onChange={handleChange}
                 value={formData.cuisine}
               />
@@ -69,6 +71,7 @@ function RecipeCreate({handleNewRecipes}) {
                 name="photo"
                 type="url"
                 placeholder="URL"
+                required={true}
                 onChange={handleChange}
                 value={formData.photo}
               />
@@ -78,6 +81,7 @@ function RecipeCreate({handleNewRecipes}) {
                 id="ingredients"
                 name="ingredients"
                 placeholder="Ingredients"
+                required={true}
                 rows={2}
                 onChange={handleChange}
                 value={formData.ingredients}
@@ -88,6 +92,7 @@ function RecipeCreate({handleNewRecipes}) {
                 id="preparation"
                 name="preparation"
                 placeholder="Preparation"
+                required={true}
                 rows={2}
                 onChange={handleChange}
                 value={formData.preparation}
